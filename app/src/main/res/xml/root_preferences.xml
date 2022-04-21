@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/background_header">
+
+        <ListPreference
+            app:defaultValue="gray"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="background"
+            app:title="@string/background_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/float_header">
+
+        <SeekBarPreference
+            android:max="8"
+            app:defaultValue="false"
+            app:key="float_preference"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:title="Ilość miejsc po przecinku" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
